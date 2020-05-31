@@ -1,4 +1,4 @@
-package Core;
+package core;
 
 public class Node {
     private int val;

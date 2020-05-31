@@ -1,7 +1,6 @@
-package Trees;
+package trees;
 
-import Core.Node;
-import com.sun.source.tree.Tree;
+import core.Node;
 
 public class TreeNode extends Node {
     TreeNode _left = null;

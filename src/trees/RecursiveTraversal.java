@@ -1,4 +1,4 @@
-package Trees;
+package trees;
 
 public class RecursiveTraversal {
     public void inOrderTraversal(TreeNode root){
