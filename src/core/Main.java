@@ -1,15 +1,17 @@
 package core;
 
+import trees.IterativeTraversal;
 import trees.RecursiveTraversal;
 import trees.TreeNode;
 
 public class Main {
 
     public static void main(String[] args){
-        binaryTreeRecursiveTraversalTest();
+//        binaryTreeRecursiveTraversalTest();
+//        binaryTreeIterativeTraversalTest();
     }
 
-    public static void binaryTreeRecursiveTraversalTest(){
+    public static TreeNode testTree01(){
         TreeNode rootNode = new TreeNode(1);
         TreeNode firstLeft = new TreeNode(2);
         TreeNode firstRight = new TreeNode(3);
@@ -21,7 +23,11 @@ public class Main {
 
         firstLeft.left(secondLeft);
         firstLeft.right(secondRight);
+        return rootNode;
+    }
+    public static void binaryTreeRecursiveTraversalTest(){
 
+        TreeNode rootNode = testTree01();
         RecursiveTraversal traversal = new RecursiveTraversal();
 
         System.out.println("[*] Inorder Traversal ...");
@@ -35,5 +41,11 @@ public class Main {
         System.out.println("[*] PostOrder Traversal ...");
         traversal.postOrderTraversal(rootNode);
 
+    }
+
+    public static void binaryTreeIterativeTraversalTest() {
+        TreeNode rootNode = testTree01();
+        IterativeTraversal traversal = new IterativeTraversal();
+        traversal.levelOrderTraversal(rootNode);
     }
 }
