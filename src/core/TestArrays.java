@@ -1,6 +1,7 @@
 package core;
 
 
+import arrays.AdHoc;
 import arrays.BinarySearch;
 
 import java.util.Arrays;
@@ -36,5 +37,10 @@ public class TestArrays {
             System.out.println(String.format("Element Found found %s", found));
         else
             System.out.println("Element Not found");
+    }
+
+    public static void testQueries(){
+        AdHoc adHoc = new AdHoc();
+        adHoc.binaryQueries();
     }
 }

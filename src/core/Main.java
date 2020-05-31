@@ -6,11 +6,16 @@ import trees.TreeNode;
 
 public class Main {
 
+    public static void ownTest(){
+        int [] a = new int[10];
+
+    }
     public static void main(String[] args){
 //        binaryTreeRecursiveTraversalTest();
 //        binaryTreeIterativeTraversalTest();
 //        TestArrays.testBinarySearch();
 //        TestArrays.testBuiltInBinarySearch();
+//        TestArrays.testQueries();
     }
 
     public static TreeNode testTree01(){
