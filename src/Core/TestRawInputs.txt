@@ -1,0 +1,11 @@
+        Node node = new Node(1);
+        System.out.println(node.get());
+        System.out.println(node.set(5));
+
+        TreeNode rootNode = new TreeNode(1);
+        TreeNode firstLeft = new TreeNode(2);
+        TreeNode firstRight = new TreeNode(3);
+        rootNode.left(firstLeft);
+        rootNode.right(firstRight);
+        RecursiveTraversal traversal = new RecursiveTraversal();
+        traversal.inOrderTraversal(rootNode);
