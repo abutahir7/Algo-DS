@@ -9,6 +9,8 @@ public class Main {
     public static void main(String[] args){
 //        binaryTreeRecursiveTraversalTest();
 //        binaryTreeIterativeTraversalTest();
+//        TestArrays.testBinarySearch();
+//        TestArrays.testBuiltInBinarySearch();
     }
 
     public static TreeNode testTree01(){
