@@ -6,6 +6,10 @@ import trees.TreeNode;
 public class Main {
 
     public static void main(String[] args){
+        binaryTreeRecursiveTraversalTest();
+    }
+
+    public static void binaryTreeRecursiveTraversalTest(){
         TreeNode rootNode = new TreeNode(1);
         TreeNode firstLeft = new TreeNode(2);
         TreeNode firstRight = new TreeNode(3);
@@ -30,7 +34,6 @@ public class Main {
 
         System.out.println("[*] PostOrder Traversal ...");
         traversal.postOrderTraversal(rootNode);
-
 
     }
 }
